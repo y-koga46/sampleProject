@@ -1,1 +1,9 @@
-<p>main works!</p>
+<div *ngFor="let todo of todoList;">
+    <div class="todo-area" *ngIf="(todo.status === selectList || selectList === SELECT_LIST.ALL)">
+        <input id="todo{{todo.id}}" type="checkbox" [checked]="todo.status" (change)="onChange(todo.id, todo.status)">
+        <label class="todo-label" for="todo{{todo.id}}" [class.todo-checked]="todo.status">
+            <p>{{todo.title}}</p>
+        </label>
+        <div class="delete-btn" *ngIf="todo.status === SELECT_LIST.COMPLETE" (click)="onDelete(todo.id)" >×</div>
+    </div>
+</div>

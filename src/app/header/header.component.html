@@ -1,1 +1,4 @@
-<p>header works!</p>
+<form [formGroup]="form" class="add-todo" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="addTodo" class="add-todo-text" id="addTodo" name="addTodo" placeholder="what needs to be done?" >
+    <button type="submit" [ngClass]="form.invalid ? 'add-btn-disabled' : 'add-btn' " [disabled]="form.invalid" >追加</button>
+</form>

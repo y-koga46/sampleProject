@@ -1,1 +1,9 @@
-<p>footer works!</p>
+<div class="footer">
+    <div>{{itemsLeft}} items left</div>
+    <div class="selects">
+        <div class="select-todo" [class.selected]="selectList === SELECT_LIST.ALL" (click)="onClick(SELECT_LIST.ALL)">All</div>
+        <div class="select-todo" [class.selected]="selectList === SELECT_LIST.ACTIVE" (click)="onClick(SELECT_LIST.ACTIVE)">Active</div>
+        <div class="select-todo" [class.selected]="selectList === SELECT_LIST.COMPLETE"(click)="onClick(SELECT_LIST.COMPLETE)">complete</div>
+    </div>
+    <div class="clear-btn" (click)="onClearComplete()">Clear Completed</div>
+</div>

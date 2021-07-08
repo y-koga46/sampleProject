@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: white;
+  color: #777777;
+  margin-right: auto; //ここで中央寄せを指定する。
+  margin-left: auto;
+  width: 500px;
+  //   font-size: 62.5%;
+}

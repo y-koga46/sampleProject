@@ -1,0 +1,44 @@
+.add-todo {
+  border-bottom: 2px solid #f5f5f5;
+  padding: 10px 10px;
+}
+
+.add-todo-text {
+  border: none;
+  outline: none;
+  height: 24px;
+  width: 390px;
+  font-size: 17px;
+  color: #999999;
+}
+
+::placeholder {
+  color: #999999;
+  font-size: 17px;
+}
+
+.add-btn-disabled {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #999999;
+  border: solid 2px #999999;
+  border-radius: 3px;
+  transition: 0.4s;
+}
+
+.add-btn {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    background: #67c5ff;
+    color: white;
+  }
+}
